@@ -8,3 +8,8 @@ body {
 h1 {
     text-shadow: 3px 5px 2px #777;
 }
+
+#stuff {
+    float: right;
+    margin-top: 290px;
+}
