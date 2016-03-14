@@ -1,8 +1,13 @@
 body {
     text-align: center;
+    font-family: Verdana, sans-serif;
 }
 
-h2 {
+h1 {
     color: #003;
-    text-shadow: 3px 5px 2px #037;
+    text-shadow: 3px 5px 2px #77a;
+}
+
+p {
+    color: #003;
 }
