@@ -12,3 +12,13 @@ h1 {
 p {
     color: #003;
 }
+
+.link {
+    text-align: left;
+    margin-left: 4em;
+    font-size: 1.5em;
+}
+
+div.link {
+    margin-top: 3em;
+}
