@@ -186,7 +186,7 @@ function draw() {
   }
   if(lose==1) {
     fill(255, 0, 0);
-    text("You Lose!", 220, 250);
+    text("Game Over", 220, 250);
   }
   
   if(lose === 0) {
