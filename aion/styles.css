@@ -1,0 +1,81 @@
+html {
+    background-color: #CCF;
+    color: #225;
+    font-family: Verdana, sans-serif;
+}
+
+div.title {
+    text-align: center;
+}
+
+h1.title {
+    font-size: 4em;
+    text-shadow: 3px 2px 5px #77A;
+    display: inline-block;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+h1.title:hover {
+    color: #44A;
+    text-shadow: -3px -2px 5px #77A;
+}
+
+#content {
+    text-align: center;
+}
+
+a {
+    color: #44A;
+    text-shadow: 2px 1px 2px #88B;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+a:hover {
+    color: #66F;
+    text-shadow: -2px -1px 2px #88B;
+}
+
+#link-outer {
+    text-align: center;
+}
+
+div.link {
+    margin-top: 2em;
+    border-radius: 2em;
+    background-color: #225;
+    display: inline-block;
+    padding: 1em;
+    min-width: 3.6em;
+    min-height: 1.2em;
+}
+
+a.link {
+    border-radius: 2em;
+    background-color: #CCF;
+    vertical-align: bottom;
+    padding: 0.5em;
+}
+
+a.link2 {
+    border-radius: 2em;
+    background-color: #CCF;
+    vertical-align: bottom;
+    padding: 0.5em;
+    margin-left: 0.5em;
+}
+
+#welcome {
+    display: inline-block;
+    margin-top: 0;
+    padding-left: 2em;
+    vertical-align: top;
+    max-width: 18em;
+    text-align: justify;
+}
+
+#thx {
+    margin-right: 2em;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
