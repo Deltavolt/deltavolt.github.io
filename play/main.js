@@ -189,49 +189,49 @@ function draw() {
   }
   
   if(lose === 0) {
-    enemy1.attractionPoint(1,mouseX,mouseY);
-    enemy2.attractionPoint(1.125,mouseX,mouseY);
-    enemy3.attractionPoint(1.25,mouseX,mouseY);
-    enemy4.attractionPoint(1.375,mouseX,mouseY);
-    enemy5.attractionPoint(1.5,mouseX,mouseY);
-    enemy6.attractionPoint(1.625,mouseX,mouseY);
-    enemy7.attractionPoint(1.75,mouseX,mouseY);
-    enemy8.attractionPoint(1.875,mouseX,mouseY);
+    enemy1.attractionPoint(1.5,mouseX+20,mouseY+20);
+    enemy2.attractionPoint(1.5,mouseX+20,mouseY-20);
+    enemy3.attractionPoint(1.5,mouseX-20,mouseY+20);
+    enemy4.attractionPoint(1.5,mouseX-20,mouseY-20);
+    enemy5.attractionPoint(1.5,mouseX+40,mouseY);
+    enemy6.attractionPoint(1.5,mouseX+40,mouseY);
+    enemy7.attractionPoint(1.5,mouseX,mouseY-40);
+    enemy8.attractionPoint(1.5,mouseX,mouseY-40);
     if(keyDown(RIGHT_ARROW)) {
-      enemy1.attractionPoint(-1,mouseX,mouseY);
-      enemy2.attractionPoint(-1.125,mouseX,mouseY);
-      enemy3.attractionPoint(-1.25,mouseX,mouseY);
-      enemy4.attractionPoint(-1.375,mouseX,mouseY);
-      enemy5.attractionPoint(-1.5,mouseX,mouseY);
-      enemy6.attractionPoint(-1.625,mouseX,mouseY);
-      enemy7.attractionPoint(-1.75,mouseX,mouseY);
-      enemy8.attractionPoint(-1.875,mouseX,mouseY);
-      enemy1.attractionPoint(1,laser.position.x,laser.position.y);
-      enemy2.attractionPoint(1.125,laser.position.x,laser.position.y);
-      enemy3.attractionPoint(1.25,laser.position.x,laser.position.y);
-      enemy4.attractionPoint(1.375,laser.position.x,laser.position.y);
-      enemy5.attractionPoint(1.5,laser.position.x,laser.position.y);
-      enemy6.attractionPoint(1.625,laser.position.x,laser.position.y);
-      enemy7.attractionPoint(1.75,laser.position.x,laser.position.y);
-      enemy8.attractionPoint(1.875,laser.position.x,laser.position.y);
+      enemy1.attractionPoint(-1.5,mouseX+20,mouseY+20);
+      enemy2.attractionPoint(-1.5,mouseX+20,mouseY-20);
+      enemy3.attractionPoint(-1.5,mouseX-20,mouseY+20);
+      enemy4.attractionPoint(-1.5,mouseX-20,mouseY-20);
+      enemy5.attractionPoint(-1.5,mouseX+40,mouseY);
+      enemy6.attractionPoint(-1.5,mouseX+40,mouseY);
+      enemy7.attractionPoint(-1.5,mouseX,mouseY-40);
+      enemy8.attractionPoint(-1.5,mouseX,mouseY-40);
+      enemy1.attractionPoint(1.5,laser.position.x+20,laser.position.y+20);
+      enemy2.attractionPoint(1.5,laser.position.x+20,laser.position.y-20);
+      enemy3.attractionPoint(1.5,laser.position.x-20,laser.position.y+20);
+      enemy4.attractionPoint(1.5,laser.position.x-20,laser.position.y-20);
+      enemy5.attractionPoint(1.5,laser.position.x+40,laser.position.y);
+      enemy6.attractionPoint(1.5,laser.position.x-40,laser.position.y);
+      enemy7.attractionPoint(1.5,laser.position.x,laser.position.y+40);
+      enemy8.attractionPoint(1.5,laser.position.x,laser.position.y-40);
     }
     if(keyDown(DOWN_ARROW)) {
-      enemy1.position.x = mouseX;
-      enemy2.position.x = mouseX;
-      enemy3.position.x = mouseX;
-      enemy4.position.x = mouseX;
-      enemy5.position.x = mouseX;
-      enemy6.position.x = mouseX;
+      enemy1.position.x = mouseX+20;
+      enemy2.position.x = mouseX+20;
+      enemy3.position.x = mouseX-20;
+      enemy4.position.x = mouseX-20;
+      enemy5.position.x = mouseX+40;
+      enemy6.position.x = mouseX-40;
       enemy7.position.x = mouseX;
       enemy8.position.x = mouseX;
-      enemy1.position.y = mouseY;
-      enemy2.position.y = mouseY;
-      enemy3.position.y = mouseY;
-      enemy4.position.y = mouseY;
+      enemy1.position.y = mouseY+20;
+      enemy2.position.y = mouseY-20;
+      enemy3.position.y = mouseY+20;
+      enemy4.position.y = mouseY-20;
       enemy5.position.y = mouseY;
       enemy6.position.y = mouseY;
-      enemy7.position.y = mouseY;
-      enemy8.position.y = mouseY;
+      enemy7.position.y = mouseY+40;
+      enemy8.position.y = mouseY-40;
       enemy1.setVelocity(0, 0);
       enemy2.setVelocity(0, 0);
       enemy3.setVelocity(0, 0);
@@ -248,25 +248,25 @@ function draw() {
       laser.setVelocity(0, laserSpeed);
     }
     if(keyDown(UP_ARROW)) {
-      enemy1.attractionPoint(-1,mouseX,mouseY);
-      enemy2.attractionPoint(-1.125,mouseX,mouseY);
-      enemy3.attractionPoint(-1.25,mouseX,mouseY);
-      enemy4.attractionPoint(-1.375,mouseX,mouseY);
-      enemy5.attractionPoint(-1.5,mouseX,mouseY);
-      enemy6.attractionPoint(-1.625,mouseX,mouseY);
-      enemy7.attractionPoint(-1.75,mouseX,mouseY);
-      enemy8.attractionPoint(-1.875,mouseX,mouseY);
+      enemy1.attractionPoint(-1.5,mouseX+20,mouseY+20);
+      enemy2.attractionPoint(-1.5,mouseX+20,mouseY-20);
+      enemy3.attractionPoint(-1.5,mouseX-20,mouseY+20);
+      enemy4.attractionPoint(-1.5,mouseX-20,mouseY-20);
+      enemy5.attractionPoint(-1.5,mouseX+40,mouseY);
+      enemy6.attractionPoint(-1.5,mouseX+40,mouseY);
+      enemy7.attractionPoint(-1.5,mouseX,mouseY-40);
+      enemy8.attractionPoint(-1.5,mouseX,mouseY-40);
     }
   }
   if(lose == 1) {
-    enemy1.attractionPoint(1,250,250);
-    enemy2.attractionPoint(1.125,250,250);
-    enemy3.attractionPoint(1.25,250,250);
-    enemy4.attractionPoint(1.375,250,250);
-    enemy5.attractionPoint(1.5,250,250);
-    enemy6.attractionPoint(1.625,250,250);
-    enemy7.attractionPoint(1.75,250,250);
-    enemy8.attractionPoint(1.875,250,250);
+    enemy1.attractionPoint(1.5,250+20,250+20);
+    enemy2.attractionPoint(1.5,250+20,250-20);
+    enemy3.attractionPoint(1.5,250-20,250+20);
+    enemy4.attractionPoint(1.5,250-20,250-20);
+    enemy5.attractionPoint(1.5,250+40,250);
+    enemy6.attractionPoint(1.5,250+40,250);
+    enemy7.attractionPoint(1.5,250,250+40);
+    enemy8.attractionPoint(1.5,250,250-40);
   }
   drawSprites();
   fill(95, 0, 255);
