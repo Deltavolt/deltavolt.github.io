@@ -140,8 +140,6 @@ function draw() {
   if(laser.position.y < 0) {
     laser.position.y = 0;
   }
-//laser.position.y += laserSpeed;
-laser.setVelocity(0, laserSpeed);
   if(laser.overlap(enemy1)) {
     laser.position.x = floor(500*random());
     laser.position.y = 0;
@@ -244,7 +242,10 @@ laser.setVelocity(0, laserSpeed);
       enemy8.setVelocity(0, 0);
     }
     if(keyDown(LEFT_ARROW)) {
-    laser.attractionPoint(1,mouseX,mouseY);
+    laser.setVelocity(0, 0);
+    }
+    else {
+      laser.setVelocity(0, laserSpeed);
     }
     if(keyDown(UP_ARROW)) {
       enemy1.attractionPoint(-1,mouseX,mouseY);
