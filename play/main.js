@@ -31,7 +31,7 @@ function setup() {
 
 function draw() {
   background(191, 191, 255);
-//  laserSpeed += 0.01;
+//laserSpeed += 0.01;
   if(enemy1.position.x > 500) {
     enemy1.position.x = 500;
   }
@@ -140,7 +140,8 @@ function draw() {
   if(laser.position.y < 0) {
     laser.position.y = 0;
   }
- laser.position.y += laserSpeed;
+//laser.position.y += laserSpeed;
+laser.setVelocity(0, laserSpeed);
   if(laser.overlap(enemy1)) {
     laser.position.x = floor(500*random());
     laser.position.y = 0;
