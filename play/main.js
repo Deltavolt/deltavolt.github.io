@@ -233,6 +233,14 @@ function draw() {
       enemy6.position.y = mouseY;
       enemy7.position.y = mouseY;
       enemy8.position.y = mouseY;
+      enemy1.setVelocity(0, 0);
+      enemy2.setVelocity(0, 0);
+      enemy3.setVelocity(0, 0);
+      enemy4.setVelocity(0, 0);
+      enemy5.setVelocity(0, 0);
+      enemy6.setVelocity(0, 0);
+      enemy7.setVelocity(0, 0);
+      enemy8.setVelocity(0, 0);
     }
     if(keyDown(LEFT_ARROW)) {
     laser.attractionPoint(1,mouseX,mouseY);
