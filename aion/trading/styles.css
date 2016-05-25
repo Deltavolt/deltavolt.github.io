@@ -72,3 +72,17 @@ a.link2 {
     position: absolute;
     bottom: 0;
 }
+
+.common {
+    color: #DDD;
+}
+
+.superior {
+    color: #4D4;
+}
+
+.heroic {
+    color: #44D;
+}
+}
+}
