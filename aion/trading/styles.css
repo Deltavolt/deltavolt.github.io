@@ -26,13 +26,13 @@ h1.title:hover {
     margin-right: auto;
 }
 
-a {
+a.link, a.link2 {
     color: #44A;
     text-shadow: 2px 1px 2px #88B;
     transition: color 0.5s, text-shadow 0.5s;
 }
 
-a:hover {
+a.link:hover, a.link2:hover {
     color: #66F;
     text-shadow: -2px -1px 2px #88B;
 }
