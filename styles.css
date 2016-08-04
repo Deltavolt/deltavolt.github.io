@@ -1,15 +1,38 @@
-body {
-    background-color: #7AF;
+html {
+    background-color: #CCF;
+    color: #225;
     font-family: Verdana, sans-serif;
 }
 
-h1 {
-    color: #003;
-    text-shadow: 3px 5px 2px #77A;
+div.title {
+    text-align: center;
+}
+
+h1.title {
+    font-size: 4em;
+    text-shadow: 3px 2px 5px #77A;
+    display: inline-block;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+h1.title:hover {
+    color: #44A;
+    text-shadow: -3px -2px 5px #77A;
 }
 
 p {
     color: #003;
+}
+
+a {
+    color: #44A;
+    text-shadow: 2px 1px 2px #88B;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+a:hover {
+    color: #66F;
+    text-shadow: -2px -1px 2px #88B;
 }
 
 #content {
