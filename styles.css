@@ -1,6 +1,5 @@
 body {
     background-color: #7AF;
-    text-align: center;
     font-family: Verdana, sans-serif;
 }
 
@@ -11,6 +10,10 @@ h1 {
 
 p {
     color: #003;
+}
+
+#content {
+    text-align: center;
 }
 
 #link-outer {
