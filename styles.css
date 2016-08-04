@@ -13,12 +13,31 @@ p {
     color: #003;
 }
 
-.link {
-    text-align: left;
-    margin-left: 4em;
-    font-size: 1.5em;
+#link-outer {
+    text-align: center;
 }
 
 div.link {
-    margin-top: 3em;
+    margin-top: 2em;
+    border-radius: 2em;
+    background-color: #225;
+    display: inline-block;
+    padding: 1em;
+    min-width: 3.6em;
+    min-height: 1.2em;
+}
+
+a.link {
+    border-radius: 2em;
+    background-color: #CCF;
+    vertical-align: bottom;
+    padding: 0.5em;
+}
+
+a.link2 {
+    border-radius: 2em;
+    background-color: #CCF;
+    vertical-align: bottom;
+    padding: 0.5em;
+    margin-left: 0.5em;
 }
