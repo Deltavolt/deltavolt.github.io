@@ -67,8 +67,6 @@ a.link2 {
 }
 
 #thx {
-    margin-right: 2em;
-    right: 0;
-    position: absolute;
-    bottom: 0;
+    float: right;
+    margin: -1em 2em 0em 0em;
 }
