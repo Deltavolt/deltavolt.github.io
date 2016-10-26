@@ -26,6 +26,19 @@ h1.title:hover {
     margin-right: auto;
 }
 
+.subtitle {
+    font-family: sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    text-shadow: 2px 1px 5px #77A;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+.subtitle:hover {
+    color: #44A;
+    text-shadow: -2px -1px 5px #77A;
+}
+
 a {
     color: #44A;
     text-shadow: 2px 1px 2px #88B;
