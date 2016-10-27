@@ -1,8 +1,19 @@
 html {
     background-color: #CCF;
-    background-image: url('/aion/background.jpg');
     color: #225;
     font-family: Verdana, sans-serif;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#body {
+    position: relative;
 }
 
 div.title {
