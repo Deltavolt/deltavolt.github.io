@@ -2425,7 +2425,7 @@
                             this.type == rt && (Ki.globalAlpha = .3)),
 							// changed colors
                             Ki.fillStyle = this.flag_underWater ? "#FF3F00" : "#FF00FF",
-							if(window.event.shiftKey) {
+							if (window.event.shiftKey) {
 								Ki.fillStyle = this.flag_underWater ? "#00FFFF" : "#FFFF00"
 							}
                             o = this.flag_underWater ? .15 * this.rad : .1 * this.rad,
